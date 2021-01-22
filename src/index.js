@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const DATA = {
+    name: "Hey, I'm Shamsher",
+    subtext: "Full Stack Web Developer, based in Kolkata, INDIA",
+    jobStatus: "Transformed @ Masai School",
+    twitterURL: 'https://twitter.com/syedshamsher12',
+    githubURL: 'https://github.com/syedshamsher',
+    linkedinURL: 'https://www.linkedin.com/in/syed-shamsher-ali-hussain-5b6302158',
+    resumeURL: '#'
+  }
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+      <App profileData = {DATA} />,
   document.getElementById('root')
 );
 

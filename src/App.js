@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react'
+import { Left } from './Left'
+import { Right } from './Right'
+import './style.css'
+export default class App extends Component {
+    constructor(props) {
+        super(props)
+    }
+    
+    render() {
+        const data = this.props.profileData
+        return (
+            <div className="app">
+                <Left
+                    name={data.name}
+                    subtext={data.subtext}
+                    jobStatus={data.jobStatus}
+                    twitterURL={data.twitterURL}
+                    githubURL={data.githubURL}
+                    linkedinURL={data.linkedinURL}
+                />
+                <Right
+                    intro={data.intro}
+                    resumeURL={data.resumeURL}
+                />
+          </div>
+        )
+    }
 }
-
-export default App;

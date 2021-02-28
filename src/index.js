@@ -10,7 +10,7 @@ const DATA = {
     twitterURL: 'https://twitter.com/syedshamsher12',
     githubURL: 'https://github.com/syedshamsher',
     linkedinURL: 'https://www.linkedin.com/in/syed-shamsher-ali-hussain-5b6302158',
-    resumeURL: '#'
+    resumeURL: 'https://drive.google.com/drive/folders/1pMVXTPHCV_4BER5-dKAxB3rbdMn2aMM-?usp=sharing'
   }
 ReactDOM.render(
       <App profileData = {DATA} />,

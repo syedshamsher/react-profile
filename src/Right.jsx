@@ -14,7 +14,7 @@ export class Right extends Component {
             <div className="content">
               <p className="intro-p">I recently completed Full Stack Web Development program at Masai School (30 weeks program, 1200+ hours of Coding, 100+ hours of Softskills, 400+ Git Commits). </p>
               <p className="intro-p">I enjoy being the bridge between engineering and design, and feel right at home as a full stack web developer. At Masai School I had experience in developing and designing products for the web, from simple landing pages to full-fledged web apps.</p>
-              <span className="intro-p job-pls">I'm currently looking for a web developer role!</span>
+              <span className="intro-p job-pls">I love building web applications</span>
             </div>
           </div>
           <div className="skills">
